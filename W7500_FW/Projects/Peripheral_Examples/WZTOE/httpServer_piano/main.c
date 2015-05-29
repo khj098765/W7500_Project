@@ -177,16 +177,16 @@ int main()
 
 		// Index page and netinfo / base64 image demo
 		reg_httpServer_webContent((uint8_t *)"index.html", (uint8_t *)index_page);				// index.html 		: Main page example
-		reg_httpServer_webContent((uint8_t *)"netinfo.html", (uint8_t *)netinfo_page);			// netinfo.html 	: Network information example page
-		reg_httpServer_webContent((uint8_t *)"netinfo.js", (uint8_t *)WIZwiki_W7500_web_netinfo_js);	// netinfo.js 		: JavaScript for Read Network configuration 	(+ ajax.js)
+//		reg_httpServer_webContent((uint8_t *)"netinfo.html", (uint8_t *)netinfo_page);			// netinfo.html 	: Network information example page
+//		reg_httpServer_webContent((uint8_t *)"netinfo.js", (uint8_t *)WIZwiki_W7500_web_netinfo_js);	// netinfo.js 		: JavaScript for Read Network configuration 	(+ ajax.js)
 		//reg_httpServer_webContent((uint8_t *)"img.html", (uint8_t *)img_page);					// img.html 		: Base64 Image data example page
 
 		// Example #1
-		reg_httpServer_webContent((uint8_t *)"dio.html", (uint8_t *)dio_page);					// dio.html 		: Digital I/O control example page
-		reg_httpServer_webContent((uint8_t *)"dio.js", (uint8_t *)WIZwiki_W7500_web_dio_js);			// dio.js 			: JavaScript for digital I/O control 	(+ ajax.js)
+//		reg_httpServer_webContent((uint8_t *)"dio.html", (uint8_t *)dio_page);					// dio.html 		: Digital I/O control example page
+//		reg_httpServer_webContent((uint8_t *)"dio.js", (uint8_t *)WIZwiki_W7500_web_dio_js);			// dio.js 			: JavaScript for digital I/O control 	(+ ajax.js)
         
-   		reg_httpServer_webContent((uint8_t *)"dio2.html", (uint8_t *)dio_page2);					// dio.html 		: Digital I/O control example page
-		reg_httpServer_webContent((uint8_t *)"dio2.js", (uint8_t *)WIZwiki_W7500_web_dio2_js);			// dio.js 			: JavaScript for digital I/O control 	(+ ajax.js)
+//   		reg_httpServer_webContent((uint8_t *)"piano.html", (uint8_t *)piano);					// dio.html 		: Digital I/O control example page
+//		reg_httpServer_webContent((uint8_t *)"dio2.js", (uint8_t *)WIZwiki_W7500_web_dio2_js);			// dio.js 			: JavaScript for digital I/O control 	(+ ajax.js)
 
 		// Example #2
 		//reg_httpServer_webContent((uint8_t *)"ain.html", (uint8_t *)ain_page);					// ain.html 		: Analog input monitor example page

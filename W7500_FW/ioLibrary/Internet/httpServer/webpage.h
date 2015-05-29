@@ -8,7 +8,7 @@
 #define WIZwiki_W7500_web_ajax_js 	"function AJAX(a,e){var c=d();c.onreadystatechange=b;function d(){if(window.XMLHttpRequest){return new XMLHttpRequest()}else{if(window.ActiveXObject){return new ActiveXObject(\"Microsoft.XMLHTTP\")}}}function b(){if(c.readyState==4){if(c.status==200){if(e){e(c.responseText)}}}}this.doGet=function(){c.open(\"GET\",a,true);c.send(null)};this.doPost=function(f){c.open(\"POST\",a,true);c.setRequestHeader(\"Content-Type\",\"application/x-www-form-urlencoded\");c.setRequestHeader(\"ISAJAX\",\"yes\");c.send(f)}}function $(a){return document.getElementById(a)}function $$(a){return document.getElementsByName(a)}function $$_ie(a,c){if(!a){a=\"*\"}var b=document.getElementsByTagName(a);var e=[];for(var d=0;d<b.length;d++){att=b[d].getAttribute(\"name\");if(att==c){e.push(b[d])}}return e}"
 
 /* Get: Network Information: function NetinfoCallback(o), getNetinfo() */
-#define WIZwiki_W7500_web_netinfo_js	"function NetinfoCallback(o){"\
+//#define WIZwiki_W7500_web_netinfo_js	"function NetinfoCallback(o){"\
 									 "$('txtmac').value=o.mac;"\
 									 "$('txtip').value=o.ip;"\
 									 "$('txtgw').value=o.gw;"\
@@ -34,7 +34,7 @@
 /* Get: Digital I/O state/dir:  function DioCallback(o), getDio(o) */
 /* Set: Digital I/O state: 		function setDiostate(o) */
 /* Set: Digital I/O direction: 	function setDiodir(o) */
-#define WIZwiki_W7500_web_dio_js	"function DioCallback(o){"\
+//#define WIZwiki_W7500_web_dio_js	"function DioCallback(o){"\
 								"var pin = o.dio_p;"\
 								"$('txtdio_s'+pin).value=o.dio_s;"\
 								"$('txtdio_d'+pin).value=o.dio_d;"\
@@ -62,7 +62,7 @@
 								"dout.doPost('pin='+p+'&val='+v);"\
 							"}"
                             
-#define WIZwiki_W7500_web_dio2_js	"function DioCallback(o){"\
+//#define WIZwiki_W7500_web_dio2_js	"function DioCallback(o){"\
 								"var pin = o.dio_p;"\
 								"$('txtdio_s'+pin).value=o.dio_s;"\
 								"$('txtdio_d'+pin).value=o.dio_d;"\
@@ -169,7 +169,7 @@
  * HTML Pages (web pages)
  *************************************************************************************/
 
-#define index_page			"<html>"\
+//#define index_page			"<html>"\
 								"<head>"\
 								"<title>WIZwiki-W7500 Web Server</title>"\
 								"<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>"\
@@ -210,7 +210,7 @@
 								"</body>"\
 							"</html>"
 
-#define netinfo_page 		"<!DOCTYPE html>"\
+//#define netinfo_page 		"<!DOCTYPE html>"\
 							"<html>"\
 								"<head>"\
 								"<title>WIZwiki-W7500 Web Server Network Info</title>"\
@@ -237,7 +237,7 @@
 								"</body>"\
 							"</html>"
 
-#define dio_page "<!DOCTYPE html>"\
+//#define dio_page "<!DOCTYPE html>"\
 "<html>"\
 	"<head>"\
 		"<title>WIZwiki-W7500 Web Server Digital I/O</title>"\
@@ -262,7 +262,7 @@
 "</html>"
 
 
-#define dio_page2   "<!DOCTYPE html><!--[if IE]><![endif]--><!--[if IE 7 ]> <html lang='en' class='ie7'>    <![endif]--><!--[if IE 8 ]>    <html lang='en' class='ie8'>    <![endif]--><!--[if IE 9 ]>    <html lang='en' class='ie9'>    <![endif]--><!--[if (gt IE 9)|!(IE)]><!--><html lang='en'><!--<![endif]-->"\
+#define index_page   "<!DOCTYPE html><!--[if IE]><![endif]--><!--[if IE 7 ]> <html lang='en' class='ie7'>    <![endif]--><!--[if IE 8 ]>    <html lang='en' class='ie8'>    <![endif]--><!--[if IE 9 ]>    <html lang='en' class='ie9'>    <![endif]--><!--[if (gt IE 9)|!(IE)]><!--><html lang='en'><!--<![endif]-->"\
 "<head>"\
 "<title>Piano Keyboard</title>"\
 "<style> *{"\
@@ -565,6 +565,10 @@
 "<!-- End Piano -->"\
 "<center><div><input type='button' value='Automatic school bell' pin='0' s='0' onclick='move(this);'></div></center>"\
 "<center><div><input type='button' value='Automatic mario' pin='1' s='0' onclick='move(this);'></div></center>"\
+"<center><div><input type='button' value='Automatic song' pin='2' s='0' onclick='move(this);'></div></center>"\
+"<center><div><input type='button' value='Automatic song' pin='3' s='0' onclick='move(this);'></div></center>"\
+"<center><div><input type='button' value='Automatic song' pin='4' s='0' onclick='move(this);'></div></center>"\
+"<center><div><input type='button' value='Automatic song' pin='5' s='0' onclick='move(this);'></div></center>"\
 "</body>"\
 "</html>"
 

@@ -308,28 +308,58 @@ int8_t set_AUTO(uint8_t * uri)
                 PWM_CHn_Stop(PWM_CH6);
                 PWM_CHn_Stop(PWM_CH5);
             }
-        else if(pin==2) tone(PWM_CH7, Re4);
-        else if(pin==3) tone(PWM_CH7, Re4s);
-        else if(pin==4) tone(PWM_CH7, Mi4);
-        else if(pin==5) tone(PWM_CH7, Fa4);
-        else if(pin==6) tone(PWM_CH7, Fa4s);
-        else if(pin==7) tone(PWM_CH7, So4);
-        else if(pin==8) tone(PWM_CH7, So4s);
-        else if(pin==9) tone(PWM_CH7, La4);
-        else if(pin==10) tone(PWM_CH7, La4s);
-        else if(pin==11) tone(PWM_CH7, Ti4);
-        else if(pin==12) tone(PWM_CH7, Do5);
-        else if(pin==13) tone(PWM_CH7, Do5s);
-        else if(pin==14) tone(PWM_CH7, Re5);
-        else if(pin==15) tone(PWM_CH7, Re5s);
-        else if(pin==16) tone(PWM_CH7, Mi5);
-        else if(pin==17) tone(PWM_CH7, Fa5);
-        else if(pin==18) tone(PWM_CH7, Fa5s);
-        else if(pin==19) tone(PWM_CH7, So5);
-        else if(pin==20) tone(PWM_CH7, So5s);
-        else if(pin==21) tone(PWM_CH7, La5);
-        else if(pin==22) tone(PWM_CH7, La5s);
-        else if(pin==23) tone(PWM_CH7, Ti5);	
+ /*       else if(pin==2) 
+            {
+                for(i=0; i<mario_num; i++)
+                {
+                    auto_tone(PWM_CH7, mario1[i]);
+                    auto_tone(PWM_CH6, mario2[i]);
+                    auto_tone(PWM_CH5, mario3[i]);
+                    delay_ms(100);
+                }
+                PWM_CHn_Stop(PWM_CH7);
+                PWM_CHn_Stop(PWM_CH6);
+                PWM_CHn_Stop(PWM_CH5);
+            }
+        else if(pin==3) 
+            {
+                for(i=0; i<mario_num; i++)
+                {
+                    auto_tone(PWM_CH7, mario1[i]);
+                    auto_tone(PWM_CH6, mario2[i]);
+                    auto_tone(PWM_CH5, mario3[i]);
+                    delay_ms(100);
+                }
+                PWM_CHn_Stop(PWM_CH7);
+                PWM_CHn_Stop(PWM_CH6);
+                PWM_CHn_Stop(PWM_CH5);
+            }
+        else if(pin==4)
+            {
+                for(i=0; i<mario_num; i++)
+                {
+                    auto_tone(PWM_CH7, mario1[i]);
+                    auto_tone(PWM_CH6, mario2[i]);
+                    auto_tone(PWM_CH5, mario3[i]);
+                    delay_ms(100);
+                }
+                PWM_CHn_Stop(PWM_CH7);
+                PWM_CHn_Stop(PWM_CH6);
+                PWM_CHn_Stop(PWM_CH5);
+            }
+        else if(pin==5)
+            {
+                for(i=0; i<mario_num; i++)
+                {
+                    auto_tone(PWM_CH7, mario1[i]);
+                    auto_tone(PWM_CH6, mario2[i]);
+                    auto_tone(PWM_CH5, mario3[i]);
+                    delay_ms(100);
+                }
+                PWM_CHn_Stop(PWM_CH7);
+                PWM_CHn_Stop(PWM_CH6);
+                PWM_CHn_Stop(PWM_CH5);
+            }*/
 	}
 
 	return pin;
